@@ -9,30 +9,7 @@ from datetime import datetime
 uri = "mongodb+srv://nishant:12345@cluster0.r5rerfn.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
 # Create a new client and connect to the server
-client = MongoClient(uri, server_api=ServerApi('1'))
-
-# Access the database and collection
-db = client['driver_alerts_db']
-collection = db['alerts']
-
-import numpy as np
-import cv2
-import mediapipe as mp
-import time
-
-mp_face_mesh = mp.solutions.face_mesh
-face_mesh = mp_face_mesh.FaceMesh(min_detection_confidence=0.5, min_tracking_confidence=0.5)
-mp_drawing = mp.solutions.drawing_utils
-drawing_spec = mp_drawing.DrawingSpec(color=(128, 0, 128), thickness=2, circle_radius=1)
-
-cap = cv2.VideoCapture(0)
-
-# Variables to track head tilt duration
-left_tilt_start_time = None
-right_tilt_start_time = Nwefjkwefkjnwefkjwkejfnkjwnefkwnefkjwnefkjnone
-alert_threshold = 10  # Angle threshold in degrees
-alert_duration = 3  # Duration in seconds
-alert_active = False
+client =
 
 def insert_alert(direction, start_time, end_time):
     alert = {
