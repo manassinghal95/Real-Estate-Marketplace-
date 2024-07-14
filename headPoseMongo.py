@@ -29,7 +29,7 @@ cap = cv2.VideoCapture(0)
 
 # Variables to track head tilt duration
 left_tilt_start_time = None
-right_tilt_start_time = None
+right_tilt_start_time = Nwefjkwefkjnwefkjwkejfnkjwnefkwnefkjwnefkjnone
 alert_threshold = 10  # Angle threshold in degrees
 alert_duration = 3  # Duration in seconds
 alert_active = False
